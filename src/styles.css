@@ -32,10 +32,14 @@
 
 #list{
   height: 100%;
-  width: 25%;
+  width: 30%;
   float:left;
   z-index: 1000;
   position: absolute;
+  border-width: 2px;;
+  border-style: solid;
+  border-color: black;
+  margin-right: 10px;
 }
 
 #listItem{
@@ -49,4 +53,16 @@
   position: relative;
   text-align: center; 
   background-color: #a4ec68;
+}
+#listItem-hover{
+  border-radius: 10px;
+  border-color: black;
+  margin-top: 30px;
+  margin-left: 30px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: black;
+  position: relative;
+  text-align: center; 
+  background-color: #315514;
 }
