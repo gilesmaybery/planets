@@ -1,3 +1,5 @@
+// An exmple of a typescript singleton that 
+// could be used for state management across the app
 class StateManager {
     private static instance: StateManager = new StateManager();
     private selectedPlanet: string = '';
@@ -5,12 +7,8 @@ class StateManager {
         if (StateManager.instance) {
             return StateManager.instance;
         }
-
-        this.member = 0;
         StateManager.instance = this;
     }
-
-    member: number;
 
     setSelectedPlanet(name: string) {
         if (name != ''){
