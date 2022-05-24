@@ -1,4 +1,3 @@
-import CSS2DObject from "three"
 import { Html } from "@react-three/drei"
 import "./styles.css"
 import { useState } from "react"
@@ -12,7 +11,11 @@ function Planet(props) {
       position={props.position}
       castShadow
       scale={clicked ? 1.5 : 1}
-      onClick={(evt) => click(!clicked)}
+      onClick={(evt) =>{
+        click(!clicked)
+  
+      }
+    } 
     >
       <sphereGeometry attach="geometry" args={[props.radius, 100, 100]} />
       <meshStandardMaterial

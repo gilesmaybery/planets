@@ -66,3 +66,15 @@
   text-align: center; 
   background-color: #315514;
 }
+
+#detailView{
+  height: 100%;
+  width: 30%;
+  float:left;
+  z-index: 1000;
+  position: absolute;
+  border-width: 2px;;
+  border-style: solid;
+  border-color: black;
+  margin-right: 10px;
+}

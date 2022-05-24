@@ -4,6 +4,7 @@ import Planet from "./Planet"
 import { Camera, TextureLoader } from 'three'
 import PlanetScene from './PlanetScene';
 import Layout from './Layout';
+
 // Geometry
 
 
@@ -31,6 +32,6 @@ import Layout from './Layout';
 
 export default function App() {
   return (
-    <Layout></Layout>
+    <Layout selectedPlanet={window.selectedPlanet}></Layout>
   )
 }
