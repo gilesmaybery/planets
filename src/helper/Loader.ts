@@ -27,7 +27,7 @@ class Loader {
     loadTextureList(textureList :TextureList){
         for (var k = 0; textureList.list.length;k++){
             this.loader.load(textureList[k].url,function(texture : Texture){
-                //Set Flags for complete
+                //Set Flags for complete, could be a better way
                 if (k==textureList.list.length){
                     this.loadingComplete = true;    // Once last texture has been loaded
                 }

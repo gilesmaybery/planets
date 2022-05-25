@@ -1,16 +1,6 @@
 import ListItem from './ListItem'
 import CanvasScene from "./CanvasScene"
 export default function Layout(props) {
-    if (props.selectedPlanet != ''){
-        return(
-            <>
-        <div id='detailView'>
-
-        </div> 
-             <CanvasScene/>
-             </>
-        )
-    }else{
   return(
     <>
     <div id='list'>
@@ -27,5 +17,4 @@ export default function Layout(props) {
           <CanvasScene/>
         </>
     )      
-  }
 };

@@ -10,10 +10,8 @@ export default function ListItem(props) {
         <div 
         onClick={(evt) => {
            click(!clicked)
-           // I realise this is a little hacky, but I was rushed for time, did not want to build a state manager/callback from parents
-        window.selectedPlanet = evt.target.outerText;
-        }}
-        
+           // Todo : add some way of handling the selected Planet state
+        }} 
         onPointerOver={(event) => hover(true)}
         onPointerOut={(event) => hover(false)}
         id={hovered ? "listItem-hover" : "listItem"}
